@@ -6,4 +6,5 @@ def eccen(ra,rp):
     eccentricity = rdiff/rsum
     a = rsum/2
     b = a*math.sqrt(1-(eccentricity**2))
-    return a,b
+    f = eccentricity*a
+    return a, b, f
